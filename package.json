@@ -1,0 +1,11 @@
+{
+  "name": "lrs-css-framework",
+  "version": "1.0.0",
+  "description": "LRS CSS framework",
+  "scripts": {
+    "build": "node-sass src/all.sass dist/all.css",
+    "build-min": "node-sass src/all.sass dist/all.min.css --output-style=compressed"
+  },
+  "author": "Zaf",
+  "author_uri": "http://lrsoft.co.id"
+}
