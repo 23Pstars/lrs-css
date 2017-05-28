@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "description": "CSS framework for LRsoft projects",
   "scripts": {
-    "build": "node-sass src/all.sass dist/all.css",
-    "build-min": "node-sass src/all.sass dist/all.min.css --output-style=compressed"
+    "build": "node-sass src/all.sass dist/all.css && node-sass src/all.sass dist/all.min.css --output-style=compressed"
   },
   "author": "Zaf",
   "author_uri": "http://lrsoft.co.id"

@@ -10,8 +10,9 @@
             margin: 0 auto;
         }
 
-        .lrs-col p {
-            margin: 8px 0;
+        .lrs-row [class^=lrs-col] p {
+            font-size: 12px;
+            margin: 4px 0;
             padding: 8px 16px;
             background: #555;
             color: #fff;
@@ -21,85 +22,67 @@
 <body>
 <div class="container">
     <div class="lrs-grid">
+
         <div class="lrs-row">
-            <div class="lrs-col lrs-col-sm-12 lrs-col-md-3 lrs-col-lg-6">
-                <p>
-                    .col-md-3 .col-lg-6
-                </p>
+            <div class="lrs-col-sm-12 lrs-col-md-4  lrs-col-lg-1">
+                <p>lg-1</p>
             </div>
-            <div class="lrs-col lrs-col-sm-12 lrs-col-md-9 lrs-col-lg-6">
-                <p>
-                    .col-md-9 .col-lg-6
-                </p>
+            <div class="lrs-col-sm-12 lrs-col-md-4  lrs-col-lg-10">
+                <p>lg-9</p>
+            </div>
+            <div class="lrs-col-sm-12 lrs-col-md-4  lrs-col-lg-1">
+                <p>lg-1</p>
             </div>
         </div>
+
         <div class="lrs-row">
-            <div class="lrs-col lrs-col-6 lrs-col-md-6 lrs-col-lg-2">
-                <p>
-                    lrs-col-6 .col-lg-2
-                </p>
+            <div class="lrs-col-sm-12 lrs-col-md-4  lrs-col-lg-2">
+                <p>lg-2</p>
             </div>
-            <div class="lrs-col lrs-col-6 lrs-col-md-6 lrs-col-lg-10">
-                <p>
-                    lrs-col-6 .col-lg-10
-                </p>
+            <div class="lrs-col-sm-12 lrs-col-md-4  lrs-col-lg-8">
+                <p>lg-8</p>
+            </div>
+            <div class="lrs-col-sm-12 lrs-col-md-4  lrs-col-lg-2">
+                <p>lg-2</p>
             </div>
         </div>
+
         <div class="lrs-row">
-            <div class="lrs-col lrs-col-3">
-                <p>
-                    three
-                </p>
+            <div class="lrs-col-sm-12 lrs-col-md-4  lrs-col-lg-3">
+                <p>lg-3</p>
             </div>
-            <div class="lrs-col lrs-col-9">
-                <p>
-                    nine
-                </p>
+            <div class="lrs-col-sm-12 lrs-col-md-4  lrs-col-lg-6">
+                <p>lg-6</p>
+            </div>
+            <div class="lrs-col-sm-12 lrs-col-md-4  lrs-col-lg-3">
+                <p>lg-3</p>
             </div>
         </div>
+
         <div class="lrs-row">
-            <div class="lrs-col lrs-col-4">
-                <p>
-                    four
-                </p>
+            <div class="lrs-col-sm-12 lrs-col-md-4  lrs-col-lg-4">
+                <p>lg-4</p>
             </div>
-            <div class="lrs-col lrs-col-8">
-                <p>
-                    eight
-                </p>
+            <div class="lrs-col-sm-12 lrs-col-md-4  lrs-col-lg-4">
+                <p>lg-4</p>
+            </div>
+            <div class="lrs-col-sm-12 lrs-col-md-4  lrs-col-lg-4">
+                <p>lg-4</p>
             </div>
         </div>
+
         <div class="lrs-row">
-            <div class="lrs-col lrs-col-5">
-                <p>
-                    five
-                </p>
+            <div class="lrs-col-sm-12 lrs-col-md-4  lrs-col-lg-5">
+                <p>lg-5</p>
             </div>
-            <div class="lrs-col lrs-col-7">
-                <p>
-                    seven
-                </p>
+            <div class="lrs-col-sm-12 lrs-col-md-4  lrs-col-lg-2">
+                <p>lg-2</p>
+            </div>
+            <div class="lrs-col-sm-12 lrs-col-md-4  lrs-col-lg-5">
+                <p>lg-5</p>
             </div>
         </div>
-        <div class="lrs-row">
-            <div class="lrs-col lrs-col-6">
-                <p>
-                    six
-                </p>
-            </div>
-            <div class="lrs-col lrs-col-6">
-                <p>
-                    six
-                </p>
-            </div>
-        </div>
-        <div class="lrs-row">
-            <div class="lrs-col lrs-col-12">
-                <p>
-                    twelve
-                </p>
-            </div>
-        </div>
+
     </div>
 </div>
 </body>
