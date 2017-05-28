@@ -1,7 +1,7 @@
 {
-  "name": "lrs-css-framework",
+  "name": "lrs-css",
   "version": "1.0.0",
-  "description": "LRS CSS framework",
+  "description": "CSS framework for LRsoft projects",
   "scripts": {
     "build": "node-sass src/all.sass dist/all.css",
     "build-min": "node-sass src/all.sass dist/all.min.css --output-style=compressed"
