@@ -1,8 +1,8 @@
 ## CSS Framework
 
 - [x] Grid
-- [ ] Button
-- [ ] Input
+- [x] Button
+- [x] Form
 
 Install Sass compiler dengan `npm install -g node-sass`.  
-Build dengan `npm run build`.
+Build dengan `npm run { all | grid | button | form }`.

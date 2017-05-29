@@ -1,0 +1,47 @@
+@import "config"
+
+@each $type in $inputTypes
+  input.#{$prefix}form
+    &[type="#{$type}"]
+      padding: $padding
+      display: inline-block
+      border: 1px solid #ccc
+      box-shadow: inset 0 1px 3px #ddd
+      border-radius: $radius
+      vertical-align: middle
+      box-sizing: border-box
+    &[disabled]
+      cursor: not-allowed
+      background-color: #eaeded
+      color: #cad2d3
+    &[readonly]
+      background-color: #eee
+      color: #777
+      border-color: #ccc
+    &:focus
+      outline: 0
+      border-color: nth(nth($colors, 1), 2)
+
+@each $type in $otherTypes
+  #{$type}.#{$prefix}form
+    padding: $padding
+    display: inline-block
+    border: 1px solid #ccc
+    box-shadow: inset 0 1px 3px #ddd
+    border-radius: $radius
+    vertical-align: middle
+    box-sizing: border-box
+    &[disabled]
+      cursor: not-allowed
+      background-color: #eaeded
+      color: #cad2d3
+    &[readonly]
+      background-color: #eee
+      color: #777
+      border-color: #ccc
+    &:focus
+      outline: 0
+      border-color: nth(nth($colors, 1), 2)
+
+label.#{$prefix}form
+  cursor: pointer

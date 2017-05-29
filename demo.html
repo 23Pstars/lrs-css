@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo</title>
+    <link rel="stylesheet" href="dist/all.min.css">
+</head>
+<body>
+<div class="container">
+
+    <h2>Grid</h2>
+    <div class="lrs-row">
+        <div class="lrs-col-sm-12 lrs-col-md-4  lrs-col-lg-1">
+            <p>lg-1</p>
+        </div>
+        <div class="lrs-col-sm-12 lrs-col-md-4  lrs-col-lg-10">
+            <p>lg-9</p>
+        </div>
+        <div class="lrs-col-sm-12 lrs-col-md-4  lrs-col-lg-1">
+            <p>lg-1</p>
+        </div>
+    </div>
+    <div class="lrs-row">
+        <div class="lrs-col-sm-12 lrs-col-md-4  lrs-col-lg-2">
+            <p>lg-2</p>
+        </div>
+        <div class="lrs-col-sm-12 lrs-col-md-4  lrs-col-lg-8">
+            <p>lg-8</p>
+        </div>
+        <div class="lrs-col-sm-12 lrs-col-md-4  lrs-col-lg-2">
+            <p>lg-2</p>
+        </div>
+    </div>
+    <div class="lrs-row">
+        <div class="lrs-col-sm-12 lrs-col-md-4  lrs-col-lg-3">
+            <p>lg-3</p>
+        </div>
+        <div class="lrs-col-sm-12 lrs-col-md-4  lrs-col-lg-6">
+            <p>lg-6</p>
+        </div>
+        <div class="lrs-col-sm-12 lrs-col-md-4  lrs-col-lg-3">
+            <p>lg-3</p>
+        </div>
+    </div>
+    <div class="lrs-row">
+        <div class="lrs-col-sm-12 lrs-col-md-4  lrs-col-lg-4">
+            <p>lg-4</p>
+        </div>
+        <div class="lrs-col-sm-12 lrs-col-md-4  lrs-col-lg-4">
+            <p>lg-4</p>
+        </div>
+        <div class="lrs-col-sm-12 lrs-col-md-4  lrs-col-lg-4">
+            <p>lg-4</p>
+        </div>
+    </div>
+    <div class="lrs-row">
+        <div class="lrs-col-sm-12 lrs-col-md-4  lrs-col-lg-5">
+            <p>lg-5</p>
+        </div>
+        <div class="lrs-col-sm-12 lrs-col-md-4  lrs-col-lg-2">
+            <p>lg-2</p>
+        </div>
+        <div class="lrs-col-sm-12 lrs-col-md-4  lrs-col-lg-5">
+            <p>lg-5</p>
+        </div>
+    </div>
+
+    <h2>Button</h2>
+    <div class="lrs-row">
+        <div class="lrs-col-sm-12">
+            <button class="lrs-btn">default</button>
+            <button class="lrs-btn lrs-btn-primary">primary</button>
+            <button class="lrs-btn lrs-btn-success">success</button>
+            <button class="lrs-btn lrs-btn-error">error</button>
+            <button class="lrs-btn lrs-btn-warning">warning</button>
+            <button class="lrs-btn lrs-btn-info">info</button>
+        </div>
+        <div class="lrs-col-sm-12">
+            <a href="#" class="lrs-btn">default</a>
+            <a href="#" class="lrs-btn lrs-btn-primary">primary</a>
+            <a href="#" class="lrs-btn lrs-btn-success">success</a>
+            <a href="#" class="lrs-btn lrs-btn-error">error</a>
+            <a href="#" class="lrs-btn lrs-btn-warning">warning</a>
+            <a href="#" class="lrs-btn lrs-btn-info">info</a>
+        </div>
+    </div>
+
+    <h2>Form</h2>
+    <div class="lrs-row">
+        <div class="lrs-col-sm-4">
+            <label><input type="text" class="lrs-form" value="default"/></label>
+        </div>
+        <div class="lrs-col-sm-4">
+            <label><input type="text" class="lrs-form" value="readonly" readonly/></label>
+        </div>
+        <div class="lrs-col-sm-4">
+            <label><input type="text" class="lrs-form" value="disabled" disabled/></label>
+        </div>
+    </div>
+    <div class="lrs-row">
+        <div class="lrs-col-sm-4">
+            <label>
+                <select class="lrs-form">
+                    <option>Option 1</option>
+                    <option>Option 2</option>
+                    <option>Option 3</option>
+                </select>
+            </label>
+        </div>
+        <div class="lrs-col-sm-4">
+            <label>
+                <select class="lrs-form" readonly>
+                    <option>Option 1</option>
+                    <option>Option 2</option>
+                    <option>Option 3</option>
+                </select>
+            </label>
+        </div>
+        <div class="lrs-col-sm-4">
+            <label>
+                <select class="lrs-form" disabled>
+                    <option>Option 1</option>
+                    <option>Option 2</option>
+                    <option>Option 3</option>
+                </select>
+            </label>
+        </div>
+    </div>
+    <div class="lrs-row">
+        <div class="lrs-col-sm-4">
+            <label>
+                <textarea class="lrs-form" rows="5">Lorem ipsum</textarea>
+            </label>
+        </div>
+        <div class="lrs-col-sm-4">
+            <label>
+                <textarea class="lrs-form" rows="5" readonly>Lorem ipsum</textarea>
+            </label>
+        </div>
+        <div class="lrs-col-sm-4">
+            <label>
+                <textarea class="lrs-form" rows="5" disabled>Lorem ipsum</textarea>
+            </label>
+        </div>
+    </div>
+    <div class="lrs-row">
+        <div class="lrs-col-sm-4">
+            <label class="lrs-form"><input class="lrs-form" type="radio" name="radio"/> Radio 1</label>
+            <label class="lrs-form"><input class="lrs-form" type="radio" name="radio"/> Radio 2</label>
+        </div>
+        <div class="lrs-col-sm-4">
+            <label class="lrs-form"><input class="lrs-form" type="radio" name="radio" readonly/> Radio 1</label>
+            <label class="lrs-form"><input class="lrs-form" type="radio" name="radio" readonly/> Radio 2</label>
+        </div>
+        <div class="lrs-col-sm-4">
+            <label class="lrs-form"><input class="lrs-form" type="radio" name="radio" disabled/> Radio 1</label>
+            <label class="lrs-form"><input class="lrs-form" type="radio" name="radio" disabled/> Radio 2</label>
+        </div>
+    </div>
+    <div class="lrs-row">
+        <div class="lrs-col-sm-4">
+            <label class="lrs-form"><input class="lrs-form" type="checkbox" name="checkbox"/> Check 1</label>
+            <label class="lrs-form"><input class="lrs-form" type="checkbox" name="checkbox"/> Check 2</label>
+        </div>
+        <div class="lrs-col-sm-4">
+            <label class="lrs-form"><input class="lrs-form" type="checkbox" name="checkbox" readonly/> Check 1</label>
+            <label class="lrs-form"><input class="lrs-form" type="checkbox" name="checkbox" readonly/> Check 2</label>
+        </div>
+        <div class="lrs-col-sm-4">
+            <label class="lrs-form"><input class="lrs-form" type="checkbox" name="checkbox" disabled/> Check 1</label>
+            <label class="lrs-form"><input class="lrs-form" type="checkbox" name="checkbox" disabled/> Check 2</label>
+        </div>
+    </div>
+</div>
+</body>
+</html>

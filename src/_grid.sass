@@ -1,59 +1,57 @@
 @import "config"
 
-.#{$prefix}grid
+.#{$prefix}row
+  box-sizing: border-box
+  display: flex
+  flex: 0 1 auto
+  flex-direction: row
+  flex-wrap: wrap
+  margin-left: -$gutter
+  margin-right: -$gutter
 
-  .#{$prefix}row
+@for $i from 1 through 12
+  .#{$prefix}col-sm-#{$i}
     box-sizing: border-box
-    display: flex
-    flex: 0 1 auto
-    flex-direction: row
-    flex-wrap: wrap
-    margin-left: -$gutter
-    margin-right: -$gutter
+    flex: 0 0 auto
+    flex-basis: $i/12 * 100%
+    max-width: $i/12 * 100%
+    padding-left: $gutter
+    padding-right: $gutter
+  .#{$prefix}col-offset-sm-#{$i}
+    box-sizing: border-box
+    flex: 0 0 auto
+    padding-left: $gutter
+    padding-right: $gutter
+    margin-left: $i/12 * 100%
 
+@media (min-width: $screenMedium)
   @for $i from 1 through 12
-    .#{$prefix}col-sm-#{$i}
+    .#{$prefix}col-md-#{$i}
       box-sizing: border-box
       flex: 0 0 auto
       flex-basis: $i/12 * 100%
       max-width: $i/12 * 100%
       padding-left: $gutter
       padding-right: $gutter
-    .#{$prefix}col-offset-sm-#{$i}
+    .#{$prefix}col-offset-md-#{$i}
       box-sizing: border-box
       flex: 0 0 auto
       padding-left: $gutter
       padding-right: $gutter
       margin-left: $i/12 * 100%
 
-  @media (min-width: $screenMedium)
-    @for $i from 1 through 12
-      .#{$prefix}col-md-#{$i}
-        box-sizing: border-box
-        flex: 0 0 auto
-        flex-basis: $i/12 * 100%
-        max-width: $i/12 * 100%
-        padding-left: $gutter
-        padding-right: $gutter
-      .#{$prefix}col-offset-md-#{$i}
-        box-sizing: border-box
-        flex: 0 0 auto
-        padding-left: $gutter
-        padding-right: $gutter
-        margin-left: $i/12 * 100%
-
-  @media (min-width: $screenLarge)
-    @for $i from 1 through 12
-      .#{$prefix}col-lg-#{$i}
-        box-sizing: border-box
-        flex: 0 0 auto
-        flex-basis: $i/12 * 100%
-        max-width: $i/12 * 100%
-        padding-left: $gutter
-        padding-right: $gutter
-      .#{$prefix}col-offset-lg-#{$i}
-        box-sizing: border-box
-        flex: 0 0 auto
-        padding-left: $gutter
-        padding-right: $gutter
-        margin-left: $i/12 * 100%
+@media (min-width: $screenLarge)
+  @for $i from 1 through 12
+    .#{$prefix}col-lg-#{$i}
+      box-sizing: border-box
+      flex: 0 0 auto
+      flex-basis: $i/12 * 100%
+      max-width: $i/12 * 100%
+      padding-left: $gutter
+      padding-right: $gutter
+    .#{$prefix}col-offset-lg-#{$i}
+      box-sizing: border-box
+      flex: 0 0 auto
+      padding-left: $gutter
+      padding-right: $gutter
+      margin-left: $i/12 * 100%

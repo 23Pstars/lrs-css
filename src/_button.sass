@@ -1,0 +1,37 @@
+@import "config"
+
+.#{$prefix}btn
+
+  zoom: 1
+  display: inline-block
+  line-height: normal
+  white-space: nowrap
+  vertical-align: middle
+  text-align: center
+  cursor: pointer
+  user-select: none
+  box-sizing: border-box
+  font-family: inherit
+  font-size: 100%
+  padding: $padding
+  color: rgba(0, 0, 0, 0.80)
+  background-color: #E6E6E6
+  border: none rgba(0, 0, 0, 0)
+  text-decoration: none
+  border-radius: $radius
+
+  &:hover, &:focus
+    filter: alpha(opacity=90)
+    background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.10))
+
+  &:focus
+    outline: 0
+
+  &:active
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset, 0 0 6px rgba(0, 0, 0, 0.20) inset
+    border-color: #000
+
+@each $color in $colors
+  .#{$prefix}btn-#{nth($color,1)}
+    color: #fff
+    background: #{nth($color,2)}
