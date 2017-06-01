@@ -10,6 +10,9 @@
       border-radius: $radius
       vertical-align: middle
       box-sizing: border-box
+      width: $width
+      &.expand
+        width: 100%
     &[disabled]
       cursor: not-allowed
       background-color: #eaeded
@@ -31,6 +34,9 @@
     border-radius: $radius
     vertical-align: middle
     box-sizing: border-box
+    width: $width
+    &.expand
+      width: 100%
     &[disabled]
       cursor: not-allowed
       background-color: #eaeded
@@ -43,5 +49,10 @@
       outline: 0
       border-color: nth(nth($colors, 1), 2)
 
+select.#{$prefix}form
+  height: 2.5em
+
 label.#{$prefix}form
   cursor: pointer
+  &.inline
+    vertical-align: middle
