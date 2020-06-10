@@ -4,5 +4,8 @@
 - [x] Button
 - [x] Form
 
-Install Sass compiler dengan `npm install -g node-sass`.  
-Build dengan `npm run { all | grid | button | form }`.
+Install dependencies `npm install`
+Build `npm run { all | grid | button | form }`
+
+Or use CDN package
+`https://unpkg.com/lrs-css@1.0.0/lrs-css.min.css`
