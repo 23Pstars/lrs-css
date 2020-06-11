@@ -1,17 +1,15 @@
 {
   "name": "lrs-css",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "CSS framework for personal projects",
   "homepage": "https://github.com/23Pstars/lrs-css",
   "scripts": {
-    "all": "node-sass src/all.sass dist/all.css && node-sass src/all.sass dist/all.min.css --output-style=compressed",
-    "demo": "node-sass src/_demo.sass dist/demo.css && node-sass src/_demo.sass dist/demo.min.css --output-style=compressed",
-    "grid": "node-sass src/_grid.sass dist/grid.css && node-sass src/_grid.sass dist/grid.min.css --output-style=compressed",
-    "button": "node-sass src/_button.sass dist/button.css && node-sass src/_button.sass dist/button.min.css --output-style=compressed",
-    "form": "node-sass src/_form.sass dist/form.css && node-sass src/_form.sass dist/form.min.css --output-style=compressed",
-    "build": "node-sass src/all.sass lrs-css.min.css --output-style=compressed",
+    "build": "node-sass src/all.sass dist/all.css && node-sass src/all.sass dist/all.min.css --output-style=compressed",
     "clean": "rm -rf dist/"
   },
+  "files": [
+    "dist/all.min.css"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/23Pstars/lrs-css.git"
