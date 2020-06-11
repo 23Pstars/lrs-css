@@ -1,13 +1,13 @@
 ## CSS Framework
 
-- [ ] Container
+- [x] Container
 - [x] Grid
 - [x] Button
 - [x] Form
-- [ ] Helper
+- [x] Helper
 
 Install dependencies `npm install`
-Build `npm run { all | grid | button | form }`
+Build `npm run build`
 
 Or use CDN package
-`https://unpkg.com/lrs-css/lrs-css.min.css`
+`https://unpkg.com/lrs-css/dist/all.min.css`
